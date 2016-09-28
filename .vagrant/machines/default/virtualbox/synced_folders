@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/meraccikopi":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/meraccikopi","hostpath":"/Users/arifsetyawan/Documents/Project/meraccikopi","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/arifsetyawan/Documents/Project/meraccikopi","disabled":false,"__vagrantfile":true}}}
