@@ -16,7 +16,7 @@ class CreatePostsTables extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $talbe->string('slug');
+            $table->string('slug');
             $table->text('content')->nullable();
             $table->integer('user_id');
             $table->integer('category_id');
@@ -27,7 +27,7 @@ class CreatePostsTables extends Migration
         Schema::create('categories', function(Blueprint $table){
             $table->increments('id');
             $table->string('name');
-            $talbe->timestamps();
+            $table->timestamps();
         });
 
     }

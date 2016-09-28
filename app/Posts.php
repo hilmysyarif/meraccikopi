@@ -14,7 +14,7 @@ class Posts extends Model
      */
     public function user()
     {
-        return $this->belongsTo(App\User::class);
+        return $this->belongsTo("App\User");
     }
 
     /**
@@ -22,7 +22,7 @@ class Posts extends Model
      */
     public function category()
     {
-        return $this->belongsTo(App\Category::class);
+        return $this->belongsTo("App\Category");
     }
 
 }
