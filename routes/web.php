@@ -11,9 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*Route::get('/', function () {
+    return view('landing');
+});*/
+
+Route::get('/{uri?}', function(){
+    return view('landing');
+})->where(['uri'=>'.*']);
 
 Route::get('landing', function(){
     return view('landing');

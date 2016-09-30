@@ -26,7 +26,8 @@ html, body {
 #pub {
   header{
     padding:10px;
-    margin-botton:2em;
+    margin-top: 1em;
+    margin-bottom:1em;
     border-bottom: 2px dashed #ff0000;
     .logo{
       img{height: $navbar-height;}
@@ -51,6 +52,7 @@ html, body {
           text-shadow: rgba(0,0,0,.01) 0 0 1px;
           background:#f2f2f2;
           margin-left: 5px;
+          padding:5px 10px;
         }
         a:hover{  background:#d2d2d2;  }
       }
@@ -59,9 +61,31 @@ html, body {
 
   .content{
     min-height:500px;
+
+    .featured-wrapper{
+      margin-bottom: 2em;
+      position:relative;
+      .img{
+        position:relative;
+      }
+      .title{
+        position:absolute;
+        color:#fff;
+        padding:1em;
+        background: rgba(0,0,0,0.5);
+        top:0;  left:0;
+        width:100%;
+        height:100%;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        font-size:24px;
+      }
+    }
+
   }
 
   footer{
+    margin-top: 1em;
     color: #3a3a3a;
   }
 

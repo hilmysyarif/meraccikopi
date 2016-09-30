@@ -27,7 +27,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-10 col-md-offset-1" id="app">
 
                 <header>
                     <div class="navbar">
@@ -44,8 +44,8 @@
                         </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Cerita</a></li>
-                                <li><a href="#">Ulasan</a></li>
+                                <li> <router-link to="/">Beranda</router-link> </li>
+                                <li> <router-link to="/cerita">Cerita</router-link> </li>
                                 <li><a href="#">Tentang Kami</a></li>
                             </ul>
                         </div>
@@ -53,7 +53,7 @@
                 </header>
 
                 <section class="content">
-                    @yield('content')
+                    <router-view></router-view>
                 </section>
 
                 <footer>
@@ -67,12 +67,10 @@
                             </address>
                         </div>
                         <div class="col-md-4 col-md-offset-4 text-right">
-                            <p>Stay tune at:</p>
+                            <h5>Stay tune at:</h5>
                             <address>
                                 <strong>Instagram</strong><br>
-                                <a href="https://www.instagram.com/meraccikopi/" target="_blank">instagram.com/meraccikopi</a>
-                            </address>
-                            <address>
+                                <a href="https://www.instagram.com/meraccikopi/" target="_blank">instagram.com/meraccikopi</a><br/>
                                 <strong>Twitter</strong><br>
                                 <a href="https://www.twitter.com/meraccikopi/" target="_blank">@meraccikopi</a>
                             </address>
