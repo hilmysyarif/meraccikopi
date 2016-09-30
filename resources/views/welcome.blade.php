@@ -66,6 +66,15 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+            @if (Route::has('login') and !Auth::check())
+                <div class="top-right links">
+                    <a href="{{ url('/login') }}">Login</a>
+                </div>
+            @else
+                <div class="top-right links">
+                    <a href="{{ url('/home') }}">Go to application</a>
+                </div>
+            @endif
             <img src="{{ asset('/img/logo-big.jpg') }}" alt="Meracci Kopi Indonesia" class="img" style="width:20%">
         </div>
     </body>
