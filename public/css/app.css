@@ -47,24 +47,13 @@ html, body {
         background: #d2d2d2; }
 
 #pub .content {
-  min-height: 500px; }
-  #pub .content .featured-wrapper {
-    margin-bottom: 2em;
-    position: relative; }
-    #pub .content .featured-wrapper .img {
-      position: relative; }
-    #pub .content .featured-wrapper .title {
-      position: absolute;
-      color: #fff;
-      padding: 1em;
-      background: rgba(0, 0, 0, 0.5);
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      font-family: 'Roboto Slab', serif;
-      font-weight: bold;
-      font-size: 24px; }
+  min-height: 500px;
+  /* clear fix */
+  /* 5 columns, percentage width */ }
+  #pub .content .grid:after {
+    content: '';
+    display: block;
+    clear: both; }
 
 #pub footer {
   margin-top: 1em;

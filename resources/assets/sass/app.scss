@@ -62,24 +62,17 @@ html, body {
   .content{
     min-height:500px;
 
-    .featured-wrapper{
-      margin-bottom: 2em;
-      position:relative;
-      .img{
-        position:relative;
-      }
-      .title{
-        position:absolute;
-        color:#fff;
-        padding:1em;
-        background: rgba(0,0,0,0.5);
-        top:0;  left:0;
-        width:100%;
-        height:100%;
-        font-family: 'Roboto Slab', serif;
-        font-weight: bold;
-        font-size:24px;
-      }
+    /* clear fix */
+    .grid:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    /* 5 columns, percentage width */
+
+    .grid-item {
+
     }
 
   }

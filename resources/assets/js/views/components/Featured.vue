@@ -1,19 +1,24 @@
 <template>
-    <div class="featured-wrapper" v-on:mouseover="showTitle=true" v-on:mouseout="showTitle=false">
-        <img v-bind:src="picture" class="img img-responsive" alt="">
-        <div class="title" v-show="showTitle">
-            {{ title }}
+    <div class="grid-item" :class="size">
+        <div class="panel panel-default">
+            <img :src="picture" class="img img-responsive pane-heading" alt="">
+            <div class="panel-body">
+                {{ title }}
+            </div>
         </div>
     </div>
+
+
 </template>
 
 <script>
+
     export default {
-        props:['picture', 'title'],
+        props:['picture', 'title', 'size'],
 
         data: function(){
             return {
-                showTitle: false,
+                showTitle: true,
             }
         }
     }

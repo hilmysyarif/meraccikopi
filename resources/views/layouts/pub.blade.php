@@ -24,67 +24,70 @@
 
 </head>
 <body id="pub">
+    <div id="app">
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <div class="navbar-header">
+                    <div class="logo">
+                        <img src="{{ asset('img/meracci@2x.png') }}" data-rjs="2" alt="">
+                    </div>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li> <router-link to="/">Beranda</router-link> </li>
+                        <li> <router-link to="/cerita">Cerita</router-link> </li>
+                        <li><a href="#">Tentang Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1" id="app">
-
-                <header>
-                    <div class="navbar">
-                        <div class="navbar-header">
-                            <div class="logo">
-                                <img src="{{ asset('img/meracci@2x.png') }}" data-rjs="2" alt="">
-                            </div>
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li> <router-link to="/">Beranda</router-link> </li>
-                                <li> <router-link to="/cerita">Cerita</router-link> </li>
-                                <li><a href="#">Tentang Kami</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </header>
+            <div class="col-md-12">
 
                 <section class="content">
                     <router-view></router-view>
                 </section>
 
-                <footer>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <address>
-                                <strong>Meracci Kopi</strong><br>
-                                Pondok Karya Agung, Blok RBC No 37.<br>
-                                Balikpapan, Kalimantan Timur Indonesia - 74115<br>
-                                <abbr title="Phone">P:</abbr> (0542) 760-319
-                            </address>
-                        </div>
-                        <div class="col-md-4 col-md-offset-4 text-right">
-                            <h5>Stay tune at:</h5>
-                            <address>
-                                <strong>Instagram</strong><br>
-                                <a href="https://www.instagram.com/meraccikopi/" target="_blank">instagram.com/meraccikopi</a><br/>
-                                <strong>Twitter</strong><br>
-                                <a href="https://www.twitter.com/meraccikopi/" target="_blank">@meraccikopi</a>
-                            </address>
-                        </div>
-                    </div>
-                </footer>
-
             </div>
         </div>
     </div>
 
+    <footer class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <address>
+                        <strong>Meracci Kopi</strong><br>
+                        Pondok Karya Agung, Blok RBC No 37.<br>
+                        Balikpapan, Kalimantan Timur Indonesia - 74115<br>
+                        <abbr title="Phone">P:</abbr> (0542) 760-319
+                    </address>
+                </div>
+                <div class="col-md-4 col-md-offset-4 text-right">
+                    <h5>Stay tune at:</h5>
+                    <address>
+                        <strong>Instagram</strong><br>
+                        <a href="https://www.instagram.com/meraccikopi/" target="_blank">instagram.com/meraccikopi</a><br/>
+                        <strong>Twitter</strong><br>
+                        <a href="https://www.twitter.com/meraccikopi/" target="_blank">@meraccikopi</a>
+                    </address>
+                </div>
+            </div>
+
+    </footer>
+    </div>
     <!-- Scripts -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="{{ url('js/app.js') }}"></script>
     <script src="{{ url('js/retina.min.js') }}"></script>
     <!-- Scripts -->
@@ -94,5 +97,8 @@
         ]); ?>
     </script>
     <script src="https://use.fontawesome.com/995f141bcd.js"></script>
+    <script>
+
+    </script>
 </body>
 </html>
